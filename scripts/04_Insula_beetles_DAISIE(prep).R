@@ -199,7 +199,7 @@ Jamaica_sims <- DAISIE_sim(
 DAISIE_plot_sims(Jamaica_sims)
 
 ### Run extra simulations 
-# One where colonization (8.77) and extinction rates (3.0)
+# One where colonization (8.77) and extinction rates (3.0).
 Jamaica_sims_extra1 <- DAISIE_sim(
   time = 5,
   M = 1000,
