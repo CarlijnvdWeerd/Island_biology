@@ -199,11 +199,11 @@ Jamaica_sims <- DAISIE_sim(
 DAISIE_plot_sims(Jamaica_sims)
 
 ### Run extra simulations 
-# One where colonization (8.77) and extinction rates (3.0).
+# One where colonization (0.05) and extinction rates (0.9), speciation (1.0).
 Jamaica_sims_extra1 <- DAISIE_sim(
   time = 5,
   M = 1000,
-  pars = c(6.76418,3.0 ,Inf,8.775854,0),
+  pars = c(1.0,0.9 ,Inf,0.05,0),
   replicates = 100,
   plot_sims = FALSE)
 
@@ -213,7 +213,7 @@ DAISIE_plot_sims(Jamaica_sims_extra1)
 Jamaica_sims_extra2 <- DAISIE_sim(
   time = 5,
   M = 1000,
-  pars = c(8.775854,6.76418,Inf,0.02762404,0.1),
+  pars = c(6.775854,4.76418,Inf,0.02762404,0.1),
   replicates = 100,
   plot_sims = FALSE)
 
