@@ -191,7 +191,7 @@ AICs
 Jamaica_sims <- DAISIE_sim(
   time = 5,
   M = 1000,
-  pars = c(6.76418,8.775854,Inf,0.02762404,0),
+  pars = c(6.76418,8.775854,Inf,0.6,0),
   replicates = 100,
   plot_sims = FALSE)
 
@@ -213,8 +213,18 @@ DAISIE_plot_sims(Jamaica_sims_extra1)
 Jamaica_sims_extra2 <- DAISIE_sim(
   time = 5,
   M = 1000,
-  pars = c(6.775854,4.76418,Inf,0.02762404,0.1),
+  pars = c(3.775854,2.76418,Inf,0.02762404,0),
   replicates = 100,
   plot_sims = FALSE)
 
 DAISIE_plot_sims(Jamaica_sims_extra2) 
+
+# One where the cladogenesis is higher than the extinction rate
+Jamaica_sims_extra3 <- DAISIE_sim(
+  time = 5,
+  M = 1000,
+  pars = c(3.775854,2.76418,2947851,0.02762404,0),
+  replicates = 100,
+  plot_sims = FALSE)
+
+DAISIE_plot_sims(Jamaica_sims_extra3) 
